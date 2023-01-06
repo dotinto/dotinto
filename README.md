@@ -1,6 +1,9 @@
 # 💫 About Me:
-🔭 I’m currently working on
-👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+🔭 I’m currently working on front-end frameworks <br>
+👯 I prefer to work alone <br>
+🤝 I’m looking for help with web technologies<br>
+🌱 I’m currently learning React <br>
+💬 Ask me about web technology
 
 
 # 💻 Tech Stack:
