@@ -2,7 +2,7 @@
 Выкладываю сюда всякий гавнокод который нахуй никому не всрался ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
 
 # 💫 About Me:
-🔭 I’m currently working on [codecortex-bot](https://github.com/dotinto/codecortex-bot)<br>🌱 I’m currently learning React
+🔭 I’m currently working on [my website services ;)](https://dotinto.pages.dev)<br>🌱 I’m currently learning React
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mQtXWAjQ) 
