@@ -1,4 +1,8 @@
-location.href = "https://discord.com/api/oauth2/authorize?client_id=823592815636250675&redirect_uri=https%3A%2F%2Fdotinto.pages.dev%2Fzero%2Fredeem&response_type=code&scope=identify"
+if (!sessionStorage.getItem("logged")) {
+  location.href = "https://discord.com/api/oauth2/authorize?client_id=823592815636250675&redirect_uri=https%3A%2F%2Fdotinto.pages.dev%2Fzero%2Fredeem&response_type=code&scope=identify"
+}
+
+sessionStorage.setItem("logged", true)
 
 window.onload = () => {
 		const fragment = new URLSearchParams(window.location.hash.slice(1));
