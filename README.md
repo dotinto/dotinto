@@ -1,5 +1,5 @@
  Добро пожаловать на помойку!
-Выкладываю сюда всякий гавнокод который нахуй никому не всрался ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
+Выкладываю сюда всякий гавнокод который никому не надо ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
 
 # 💫 About Me:
 🔭 I’m currently working on [my website services ;)](https://dotinto.pages.dev)<br>🌱 I’m currently learning React
