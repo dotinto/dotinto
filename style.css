@@ -20,6 +20,7 @@ body {
 }
 a {
     z-index: 99999;
+    text-decoration: none;
 }
 div.content {
     height: 100%;
@@ -40,6 +41,9 @@ div.content {
 .card .card-title {
     font-size: 24pt;
     font-family: "Shock-Brat";
+}
+.card:first-child {
+    margin-top: 5%;
 }
 @media screen and (max-width: 720px) {
     .logo {
@@ -80,6 +84,16 @@ div.content {
     .footer .mobile {
         display: none;
     }
+    .underspace {
+        font-size: 24pt;
+    }
+    .underspace span {
+        transform: scale(1.5);
+    }
+    .card:first-child .card-title {
+        font-size: 48pt;
+        padding-bottom: 5%;
+    }
 }
 .h {
     position: absolute;
@@ -100,4 +114,31 @@ div.content {
     background: #222;
     height: 4.5%;
     
+}
+div.underspace {
+    width: 100%;
+    margin-bottom: 2%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+div.underspace span {
+    padding-right: 2%;
+}
+div.icons a img {
+    width: 15%;
+}
+div.icons a *:not([src="assets/github-mark-white.svg"],[src="assets/steam-logo-white.png"]) {
+    filter: invert(1);
+}
+[src="assets/steam-logo-white.png"] {
+    transform: scale(2);
+}
+div.icons a {
+    margin-right: 3%;
+}
+div.icons a:last-child {
+    margin-right: 0;
 }
