@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 a {
-    z-index: 99999;
+    z-index: 9;
     text-decoration: none;
 }
 div.content {
