@@ -94,7 +94,7 @@ div.content {
     left: -4%;
 }
 .footer .desktop .github-repo {
-    bottom: 0%;
+    bottom: -2%;
     left: 2%;
 }
 .footer .desktop {
@@ -113,4 +113,3 @@ div.content {
     margin-right: 7%;
     margin-top: 1%;
 }
- 
