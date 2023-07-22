@@ -41,6 +41,7 @@ div.content {
 .card .card-title {
     font-size: 24pt;
     font-family: "Shock-Brat";
+    margin-left: -5%;
 }
 .card:first-child {
     margin-top: 5%;
@@ -143,9 +144,9 @@ div.icons a:last-child {
     margin-right: 0;
 }
 [src="assets/threads.png"] {
-    transform: scale(0.8);
-    top: 5%;
+    transform: scale(1.1);
 }
 div.icons {
     width: 100%;
+    margin-top: 5%;
 }
