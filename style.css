@@ -87,15 +87,11 @@ div.content {
 }
 .footer * .github-repo {
     transform: scale(0.3);
-    position: absolute;
 }
 .footer .mobile .github-repo {
+    position: absolute;
     bottom: -2%;
     left: -4%;
-}
-.footer .desktop .github-repo {
-    bottom: -2%;
-    left: 2%;
 }
 .footer .desktop {
     width: 100%;
@@ -103,13 +99,5 @@ div.content {
     bottom: 0; left: 0;
     background: #222;
     height: 4.5%;
-}
-.footer .desktop .logo {
-    width: 50%;
-    float: right;
-}
-.footer .desktop .logo img {
-    float: right;
-    margin-right: 7%;
-    margin-top: 1%;
+    
 }
