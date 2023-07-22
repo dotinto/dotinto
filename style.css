@@ -31,12 +31,12 @@ div.content {
 }
 .card {
     color: white;
-    width: 50%;
-    margin: 0 22%;
+    width: 60%;
+    margin: 0 12%;
     border: 1px solid #444;
     height: 100%;
     border-radius: 5px;
-    padding: 2%;
+    padding: 2% 10%;
 }
 .card .card-title {
     font-size: 24pt;
@@ -79,7 +79,7 @@ div.content {
         flex-direction: row;
     }
     .card {
-        margin: 0 25%;
+        margin: 0 20%;
     }
     .footer .mobile {
         display: none;
@@ -128,7 +128,7 @@ div.underspace span {
     padding-right: 2%;
 }
 div.icons a img {
-    width: 15%;
+    width: 12%;
 }
 div.icons a *:not([src="assets/github-mark-white.svg"],[src="assets/steam-logo-white.png"]) {
     filter: invert(1);
@@ -141,4 +141,11 @@ div.icons a {
 }
 div.icons a:last-child {
     margin-right: 0;
+}
+[src="assets/threads.png"] {
+    transform: scale(0.8);
+    top: 5%;
+}
+div.icons {
+    width: 100%;
 }
