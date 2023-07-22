@@ -10,7 +10,9 @@ body {
     height: 8%;
     width: 100%;
 }
-
+a {
+    z-index: 99;
+}
 @media screen and (max-width: 720px) {
     .logo {
         display: flex;
