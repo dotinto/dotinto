@@ -94,7 +94,7 @@ div.content {
     left: -4%;
 }
 .footer .desktop .github-repo {
-    bottom: 2%;
+    bottom: 0%;
     left: 2%;
 }
 .footer .desktop {
@@ -110,5 +110,6 @@ div.content {
 }
 .footer .desktop .logo img {
     float: right;
-    margin-right: 4%;
+    margin-right: 7%;
+    margin-top: 1%;
 }
