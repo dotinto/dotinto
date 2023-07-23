@@ -148,6 +148,9 @@ div.icons {
 div.cards *.card {
     margin-top: 5%;
 }
+div.cards .card:not(:nth-child(-n+2)) {
+    margin-top: 2%;
+}
 div.card-title span {
     float: right;
     padding: 0;
