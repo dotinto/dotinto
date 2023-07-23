@@ -7,6 +7,10 @@ body {
     font-family: "Shock-Brat";
     src: url("assets/Shock-Brat.ttf")
 }
+@font-face {
+    font-family: "Vasek";
+    src: url("assets/Vasek Italic_0.ttf")
+}
 .logo img {
     width: 30%;
     z-index: -1;
@@ -28,20 +32,25 @@ div.content {
 .cards {
     display: flex;
     height: 100%;
+    flex-direction: column;
 }
 .card {
     color: white;
     width: 60%;
-    margin: 0 12%;
+    margin: 0 14%;
     border: 1px solid #444;
     height: 100%;
     border-radius: 5px;
-    padding: 2% 10%;
+    padding: 2% 7%;
 }
 .card .card-title {
-    font-size: 24pt;
+    font-size: 20pt;
     font-family: "Shock-Brat";
     margin-left: -5%;
+}
+.card .card-body:not(.card:first-child .card-body) {
+    font-family: "Vasek";
+    font-size: 28pt;
 }
 .card:first-child {
     margin-top: 5%;
@@ -85,15 +94,12 @@ div.content {
     .footer .mobile {
         display: none;
     }
-    .underspace {
-        font-size: 24pt;
-    }
-    .underspace span {
-        transform: scale(1.5);
-    }
     .card:first-child .card-title {
         font-size: 48pt;
         padding-bottom: 5%;
+    }
+    .cards {
+        flex-wrap: wrap;
     }
 }
 .h {
@@ -115,18 +121,6 @@ div.content {
     background: #222;
     height: 4.5%;
     
-}
-div.underspace {
-    width: 100%;
-    margin-bottom: 2%;
-    color: white;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
-div.underspace span {
-    padding-right: 2%;
 }
 div.icons a img {
     width: 12%;
@@ -150,4 +144,11 @@ div.icons a:last-child {
 div.icons {
     width: 100%;
     margin-top: 5%;
+}
+div.cards *.card {
+    margin-top: 5%;
+}
+div.card-title span {
+    float: right;
+    padding: 0;
 }
