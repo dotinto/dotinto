@@ -139,6 +139,7 @@ div.icons a *:not([src="assets/github-mark-white.svg"],[src="assets/steam-logo-w
 }
 div.icons a {
     margin-right: 3%;
+    user-select: none;
 }
 div.icons a:last-child {
     margin-right: 0;
