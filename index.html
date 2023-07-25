@@ -114,7 +114,7 @@
       const subdomain = 'stable';
 
       const modifiedLink = subdomain + '.' + link.split('://')[1];
-      location.href = modifiedLink
+      location.href = "https://" + modifiedLink
       document.head.innerHTML += `
       <style>
         html {
