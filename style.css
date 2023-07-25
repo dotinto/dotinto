@@ -29,6 +29,10 @@ a {
 div.content {
     height: 100%;
 }
+.f .card-body > img{
+    width: 15%;
+    padding-top: 1%;
+}
 .cards {
     display: flex;
     height: 100%;

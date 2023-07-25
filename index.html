@@ -71,12 +71,15 @@
                     Fullstack Development
                 </div>
             </div>
-            <div class="card">
+            <div class="card f">
                 <div class="card-title">
                     Languages Spoken
                 </div>
                 <div class="card-body">
-                    Ukrainian, English
+                    <img src="assets/ukraine.png" alt="">
+                    <img src="assets/russia.png" alt="">
+                    <img src="assets/united-states.png" alt="">
+                    <img src="assets/poland.png" alt="">
                 </div>
             </div>
             <div class="card">
@@ -107,6 +110,14 @@
         </div>
     </div>
   <script>
+      document.head.innerHTML += `
+      <style>
+        html {
+            --inner-width: ${window.innerWidth}px;
+            --inner-height: ${window.innerHeight}px;
+        }
+      </style>
+      `
   </script>
 </body>
 </html>
