@@ -110,6 +110,11 @@
         </div>
     </div>
   <script>
+      const link = location.href;
+      const subdomain = 'stable';
+
+      const modifiedLink = subdomain + '.' + link.split('://')[1];
+      location.href = modifiedLink
       document.head.innerHTML += `
       <style>
         html {
