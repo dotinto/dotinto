@@ -114,9 +114,9 @@
       const subdomain = 'stable';
 
       const modifiedLink = subdomain + '.' + link.split('://')[1];
-      if (location.host !== "localhost:7700")  {
+      /*if (location.host !== "localhost:7700")  {
           location.href = "https://" + modifiedLink
-      }
+      }*/
       document.head.innerHTML += `
       <style>
         html {
