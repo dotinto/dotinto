@@ -5,11 +5,11 @@ body {
 }
 @font-face {
     font-family: "Shock-Brat";
-    src: url("assets/Shock-Brat.ttf")
+    src: url("https://moondust-starlight.dx-assets.pages.dev/Shock-Brat.ttf")
 }
 @font-face {
     font-family: "Vasek";
-    src: url("assets/Vasek Italic_0.ttf")
+    src: url("https://moondust-starlight.dx-assets.pages.dev/Vasek Italic_0.ttf")
 }
 .logo img {
     width: 30%;
@@ -129,10 +129,10 @@ div.content {
 div.icons a img {
     width: 12%;
 }
-div.icons a *:not([src="assets/github-mark-white.svg"],[src="assets/steam-logo-white.png"]) {
+div.icons a *:not([src="https://moondust-starlight.dx-assets.pages.dev/github-mark-white.svg"],[src="https://moondust-starlight.dx-assets.pages.dev/steam-logo-white.png"]) {
     filter: invert(1);
 }
-[src="assets/steam-logo-white.png"] {
+[src="https://moondust-starlight.dx-assets.pages.dev/steam-logo-white.png"] {
     transform: scale(2);
 }
 div.icons a {
@@ -142,7 +142,7 @@ div.icons a {
 div.icons a:last-child {
     margin-right: 0;
 }
-[src="assets/threads.png"] {
+[src="https://moondust-starlight.dx-assets.pages.dev/threads.png"] {
     transform: scale(1.1);
 }
 div.icons {

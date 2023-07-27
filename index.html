@@ -21,7 +21,7 @@
         </div>
         <div class="discord">
             <a target="_blank" href="https://discord.com/users/445565647653699594">
-                <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="discord"/>
+                <img src="https://moondust-starlight.dx-assets.pages.dev/clyde_white_RGB.png" alt="discord"/>
             </a>
         </div>
     </div>
@@ -35,22 +35,22 @@
                 <div class="card-body" align="center">
                     <div class="icons">
                         <a href="https://github.com/dotinto">
-                            <img src="assets/github-mark-white.svg" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/github-mark-white.svg" alt="">
                         </a>
                         <a href="https://www.tiktok.com/@dedlispace?_t=8eCouOS4D4v&_r=1">
-                            <img src="assets/tiktok.png" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/tiktok.png" alt="">
                         </a>
                         <a href="https://steamcommunity.com/id/dotinto/">
-                            <img src="assets/steam-logo-white.png" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/steam-logo-white.png" alt="">
                         </a>
                         <a href="https://instagram.com/dxtintx">
-                            <img src="assets/instagram.png" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/instagram.png" alt="">
                         </a>
                         <a href="https://www.threads.net/@dxtintx">
-                            <img src="assets/threads.png" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/threads.png" alt="">
                         </a>
                         <a href="https://twitter.com/dxtintx7">
-                            <img src="assets/twitter.png" alt="">
+                            <img src="https://moondust-starlight.dx-assets.pages.dev/twitter.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     Specialization
                 </div>
                 <div class="card-body">
-                    Fullstack Development
+                    Fullstack & DevOps
                 </div>
             </div>
             <div class="card f">
@@ -76,10 +76,10 @@
                     Languages Spoken
                 </div>
                 <div class="card-body">
-                    <img src="assets/ukraine.png" alt="">
-                    <img src="assets/russia.png" alt="">
-                    <img src="assets/united-states.png" alt="">
-                    <img src="assets/poland.png" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/ukraine.png" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/russia.png" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/united-states.png" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/poland.png" alt="">
                 </div>
             </div>
             <div class="card">
@@ -97,14 +97,14 @@
         <div class="mobile">
             <div class="github-repo">
                 <a href="https://github.com/dotinto/dotinto">
-                    <img src="assets/github-mark-white.svg" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/github-mark-white.svg" alt="">
                 </a>
             </div>
         </div>
         <div class="desktop" align="center">
             <div class="github-repo">
                 <a href="https://github.com/dotinto/dotinto">
-                    <img src="assets/github-mark-white.svg" alt="">
+                    <img src="https://moondust-starlight.dx-assets.pages.dev/github-mark-white.svg" alt="">
                 </a>
             </div>
         </div>
@@ -114,7 +114,9 @@
       const subdomain = 'stable';
 
       const modifiedLink = subdomain + '.' + link.split('://')[1];
-      location.href = "https://" + modifiedLink
+      if (location.host !== "localhost:7700")  {
+          location.href = "https://" + modifiedLink
+      }
       document.head.innerHTML += `
       <style>
         html {
