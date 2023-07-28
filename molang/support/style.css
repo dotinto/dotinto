@@ -1,0 +1,20 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 25%;
+}
+input, textarea {
+    margin: 2%;
+}
+@media screen and (max-width: 720px) {
+    form {
+        margin: 0;
+        width: 100%;
+    }
+}

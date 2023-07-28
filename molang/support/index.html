@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Molang Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <label for="discordId">Вкажіть ваш ідентифікатор Discord</label>
+        <input type="number" name="discordId" required>
+        <label for="title">Коротко опишіть проблему</label>
+        <input type="text" name="title" maxlength="50" required minlength="10">
+        <label for="desc">Опишіть проблему повністю</label>
+        <textarea name="desc" id="desc" rows="8" cols="40" required></textarea>
+        <input type="submit">
+    </form>
+    <script>
+        document.body.innerHTML += process.env.TEST
+    </script>
+</body>
+
+</html>
