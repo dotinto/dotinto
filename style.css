@@ -118,13 +118,17 @@ div.content {
     bottom: -2%;
     left: -4%;
 }
+.footer {
+    height: 1000%;
+    width: 100%;
+}
 .footer .desktop {
     width: 100%;
     position: absolute;
     bottom: 0; left: 0;
+    top: 100%;
     background: #222;
     height: 4.5%;
-    
 }
 div.icons a img {
     width: 12%;
