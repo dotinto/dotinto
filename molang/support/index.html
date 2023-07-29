@@ -11,15 +11,28 @@
 <body>
     <form>
         <label for="discordId">Вкажіть ваш ідентифікатор Discord</label>
-        <input type="number" name="discordId" required>
+        <input type="number" maxlength="19" id="id" minlength="19" name="discordId" required>
         <label for="title">Коротко опишіть проблему</label>
-        <input type="text" name="title" maxlength="50" required minlength="10">
+        <input type="text" name="title" maxlength="50" id="title" required minlength="10">
         <label for="desc">Опишіть проблему повністю</label>
-        <textarea name="desc" id="desc" rows="8" cols="40" required></textarea>
-        <input type="submit">
+        <textarea name="desc" id="desc" rows="8" cols="40" id="desc" required></textarea>
+        
     </form>
+    <button onclick="send()">Відправити</button>
     <script>
-        document.body.innerHTML += process.env.TEST
+     function send(){
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1134812506527899708/Ue7MlINWp6hLgE3bJ710PALbKDwT4kJSWNLgkjFvgN0Sc7-ZKMoENBJgL9Dd7S7pbvNQ")
+      request.setRequestHeader('Content-type', 'application/json');
+      var res = document.querySelector("#id").value + ": " + document.querySelector("form input#title").value + ": " + document.querySelector("form input#desc").value
+      const params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: "ky"
+      }
+
+      request.send(JSON.stringify(params));
+}
     </script>
 </body>
 
