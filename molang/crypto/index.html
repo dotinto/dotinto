@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Molang Crypto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div align="center">
+        <span id="api-price">ОНОВЛЕННЯ</span>
+        <br><br>
+        <span>Останнє оновлення: <i id="api-date">ОНОВЛЕННЯ</i></span>
+    </div>
+    
+    <script>
+        var crypto;
+        
+        function ddmmyyyyhhmm(timestamp) {
+            var date = new Date(timestamp)
+            var res = ""
+            res += ((date.getHours.length < 10) ? date.getHours() : date.getHours()) + ":"
+            res += ((date.getMinutes.length < 10) ? date.getMinutes() : date.getMinutes()) + "  "
+            var month = date.getMonth() + 1
+            
+            res += ((date.getDate() < 10) ? "0" + date.getDate() : date.getDate())+ "."
+            res += ((month < 10) ? "0" + month : month) + "."
+            res += date.getFullYear()
+            return res
+        }
+    
+        fetch("https://app.interimapi.com/api/v1/341738a3-f8de-4449-94de-6f06f413c71a/crypto?max=updatedAt", {
+            headers: {
+                "Authorization": "Bearer RI8SFk2PC2tr4q9ow0QETgQshBIqMpIC7HDrqepX"
+            }
+        }).then(res => res.json())
+        .then(data => {
+            
+            fetch("https://app.interimapi.com/api/v1/341738a3-f8de-4449-94de-6f06f413c71a/crypto?where[updatedAt][eq]=" + data, {
+                headers: {
+                    "Authorization": "Bearer RI8SFk2PC2tr4q9ow0QETgQshBIqMpIC7HDrqepX"
+                }
+            }).then(res => res.json())
+            .then(dat => {
+                
+                
+                document.querySelector("#api-price").innerText = dat[0].price
+                document.querySelector("#api-date").innerText = ddmmyyyyhhmm(dat[0].updatedAt)
+            })
+        })
+        
+    </script>
+</body>
+
+</html>
