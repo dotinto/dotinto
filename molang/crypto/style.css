@@ -2,6 +2,27 @@ body {
     padding: 20% 0;
     font-family: Arial;
 }
+#eq {
+    font-size: 16pt;
+}
 #api-price {
     font-size: 24pt;
+}
+@media screen and (max-width: 750px) {
+img {
+    margin-top: -4%;
+}
+#eq img {
+    margin-left: -2%;
+    margin-right: -2%;
+    margin-top: -2%;
+}
+}
+img {
+    margin-top: -2%;
+}
+#eq img {
+    margin-top: -1%;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
 }
