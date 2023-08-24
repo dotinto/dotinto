@@ -37,14 +37,18 @@
         fetch("https://app.interimapi.com/api/v1/341738a3-f8de-4449-94de-6f06f413c71a/crypto?max=updatedAt", {
             headers: {
                 "Authorization": "Bearer RI8SFk2PC2tr4q9ow0QETgQshBIqMpIC7HDrqepX"
-            }
+            },
+            Cache: 'reload', 
+            credentials: 'include'
         }).then(res => res.json())
         .then(data => {
             
             fetch("https://app.interimapi.com/api/v1/341738a3-f8de-4449-94de-6f06f413c71a/crypto?where[updatedAt][eq]=" + data, {
                 headers: {
                     "Authorization": "Bearer RI8SFk2PC2tr4q9ow0QETgQshBIqMpIC7HDrqepX"
-                }
+                },
+                Cache: 'reload', 
+                credentials: 'include'
             }).then(res => res.json())
             .then(dat => {
                 
