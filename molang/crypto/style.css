@@ -9,8 +9,9 @@ body {
     font-size: 24pt;
 }
 @media screen and (max-width: 750px) {
-img {
+div > img {
     margin-top: -4%;
+    margin-right: 2%;
 }
 #eq img {
     margin-left: -2%;
@@ -18,11 +19,12 @@ img {
     margin-top: -2%;
 }
 }
-img {
-    margin-top: -2%;
+div > img {
+    margin-top: -1%;
+    margin-right: 1%;
 }
 #eq img {
-    margin-top: -1%;
+    margin-top: -0.5%;
     margin-left: -0.5%;
-    margin-right: -0.5%;
+    margin-right: 0%;
 }
