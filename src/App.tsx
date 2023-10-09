@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 
-const languages = "en" || "en-US" || "uk" || "uk-UA"
-const language = (navigator.language !== languages) ? "en" : navigator.language
-const languageFile = require(`./locales/${language}.js`);
+const language = navigator.language
+const languageFile = require(`./locales/${language}.js`) || require(`./locales/en-US.js`);
 function App() {
   return (
     <div className="App">
