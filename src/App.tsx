@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+const languages = "uk" || "en"
+const language = (navigator.language !== languages) ? "en-US" : navigator.language
+const languageFile = require(`./locales/${language}.js`);
 function App() {
   return (
     <div className="App">
@@ -14,7 +17,7 @@ function App() {
         <div className="cards">
             <div className="card">
                 <div className="card-title">
-                    Links
+                    {languageFile.title.links}
                 </div>
                 <div className="card-body" >
                     <div className="icons">
@@ -35,10 +38,10 @@ function App() {
             </div>
             <div className="card">
                 <div className="card-title">
-                    Occupation
+                    {languageFile.title.occupation}
                 </div>
                 <div className="card-body">
-                    Student
+                    {languageFile.value.occupation}
                 </div>
             </div>
             <div className="card">
