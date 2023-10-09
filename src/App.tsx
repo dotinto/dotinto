@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 const language = navigator.language
-const languageFile = require(`./locales/${language}.js`) || require(`./locales/en-US.js`);
+const languageFile = require(`./locales/${navigator.language}.js`) || require(`./locales/en-US.js`);
 function App() {
   return (
     <div className="App">
