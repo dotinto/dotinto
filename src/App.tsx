@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-const languages = "uk" || "en"
-const language = (navigator.language !== languages) ? "en-US" : navigator.language
+const languages = "en" || "en-US" || "uk" || "uk-UA"
+const language = (navigator.language !== languages) ? "en" : navigator.language
 const languageFile = require(`./locales/${language}.js`);
 function App() {
   return (
