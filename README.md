@@ -1,5 +1,7 @@
 [![](https://svg-banners.vercel.app/api?type=luminance&text1=dxtintx&width=200&height=100)]()
 
+<img src="https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+
 <div align="center"><h1>📋 Languages</h1></div>
 <div style="display:flex;flex-direction:row;">
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
