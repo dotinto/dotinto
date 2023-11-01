@@ -1,6 +1,6 @@
 
 # 💫 About Me:
-🌱 I’m currently learning React
+I'm indie developer from 🇺🇦 Ukraine. I work with JavaScript (e.g. TypeScript, React, Electron etc.) for about 4 years.
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.com/users/445565647653699594) 
