@@ -1,4 +1,4 @@
-[![](https://svg-banners.vercel.app/api?type=luminance&text1=dxtintx&width=800&height=400)]()
+[![](https://svg-banners.vercel.app/api?type=luminance&text1=dxtintx&width=200&height=100)]()
 
 
 # 💻 Tech Stack:
