@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import './welcome-section.css'
 import '../keyframes.css'
 import js from '../assets/js.png'
@@ -19,7 +19,7 @@ function WelcomeSection() {
         let i = 0
         function phrases_loop() {
             (phrase_view !== null) ? phrase_view.innerHTML = phrases[i] : console.log("");
-            (i == phrases.length - 1) ? i = 0 : i++;
+            (i === phrases.length - 1) ? i = 0 : i++;
         }
         phrases_loop();
         setInterval(phrases_loop, 1000)

@@ -1,4 +1,3 @@
-import React from 'react';
 import './header.css'
 
 import steam from "../assets/steam.png"
@@ -21,10 +20,10 @@ function Header() {
                         <a href="./" className="tab">Roadmap</a>
                     </div>
                     <div className="socials">
-                        <a><img src={github} alt="github" /></a>
-                        <a><img src={discord} alt="discord" /></a>
-                        <a><img src={steam} alt="steam" /></a>
-                        <a><img src={xbox} alt="xbox" /></a>
+                        <a href="./" ><img src={github} alt="github" /></a>
+                        <a href="./" ><img src={discord} alt="discord" /></a>
+                        <a href="./" ><img src={steam} alt="steam" /></a>
+                        <a href="./" ><img src={xbox} alt="xbox" /></a>
                     </div>
                 </div>
             </div>
