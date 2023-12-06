@@ -2,6 +2,10 @@
   font-family: 'DM Mono Regular';
   src: local('DM Mono Regular'), url(assets/DMMono-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Audiowide Regular';
+  src: local('Audiowide Regular'), url(assets/Audiowide-Regular.ttf) format('truetype');
+}
 
 body {
   margin: 0;

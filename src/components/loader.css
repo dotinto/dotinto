@@ -10,7 +10,7 @@ div.loader {
     align-items: center;
 }
 .hidden {
-    display: none;
+    display: none !important;
 }
 .hide-loader-animation {
     animation: loading-hiding-animation .3s ease-in-out both;

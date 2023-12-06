@@ -15,15 +15,14 @@ function Header() {
                 </div>
                 <div className="navbar">
                     <div className="tabs">
-                        <a href="./" className="tab">Working for</a>
-                        <a href="./" className="tab">Hard skills</a>
+                        <a href="./" className="tab">Skills</a>
                         <a href="./" className="tab">Roadmap</a>
                     </div>
                     <div className="socials">
-                        <a href="./" ><img src={github} alt="github" /></a>
-                        <a href="./" ><img src={discord} alt="discord" /></a>
-                        <a href="./" ><img src={steam} alt="steam" /></a>
-                        <a href="./" ><img src={xbox} alt="xbox" /></a>
+                        <a href="https://github.com/dotinto" rel='noreferrer' target="_blank"><img src={github} alt="github" /></a>
+                        <a href="https://discord.com/users/445565647653699594" rel='noreferrer' target="_blank"><img src={discord} alt="discord" /></a>
+                        <a href="https://steamcommunity.com/id/dotinto/" rel='noreferrer' target="_blank"><img src={steam} alt="steam" /></a>
+                        <a href="https://account.xbox.com/en-us/profile?gamertag=dotinto5775" rel='noreferrer' target="_blank"><img src={xbox} alt="xbox" /></a>
                     </div>
                 </div>
             </div>

@@ -10,6 +10,8 @@ function App() {
         <Loader />
         <Header />
         <WelcomeSection />
+        <div id="anchor">1</div>
+
     </div>
   );
 }

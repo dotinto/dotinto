@@ -7,7 +7,7 @@ function Loader() {
             document.querySelector('div.loader')?.classList.add("hide-loader-animation");
             setTimeout(() => {
                 document.querySelector("div.loader")?.classList.add("hidden")
-            }, 400)
+            }, 1300)
         }
     })
     return (

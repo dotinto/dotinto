@@ -17,10 +17,6 @@ div.welcome-section {
 .welcome-section div.container div {
     display: block;
 }
-.welcome-section div.container div.main-label {
-    width: 75%;
-    color: white;
-}
 .welcome-section div.container div.skill-cards {
     width: 100%;
     display: flex;
@@ -44,13 +40,16 @@ div.welcome-section {
 .welcome-section div.container div.skill-cards div.skill-card:nth-child(2) {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(239, 177, 21) 35%, rgba(0,0,0,1) 100%);
     transform: scale(1.6);
+    z-index: 1;
 }
 .welcome-section div.container div.skill-cards div.skill-card:nth-child(3) {
-    transform: scale(2)
+    transform: scale(2);
+    z-index: 2;
 }
 .welcome-section div.container div.skill-cards div.skill-card:nth-child(4) {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(9, 57, 168) 35%, rgba(0,0,0,1) 100%);
     transform: scale(1.6);
+    z-index: 1;
 }
 .welcome-section div.container div.skill-cards div.skill-card:nth-child(5) {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(40, 98, 233) 35%, rgba(0,0,0,1) 100%);
@@ -58,15 +57,4 @@ div.welcome-section {
 .welcome-section div.container div.skill-cards div.skill-card img {
     width: 60%;
     aspect-ratio: 1/1;
-}
-#phrase-view span {
-    white-space: pre-line;
-}
-.welcome-section div.container .main-label {
-    text-align: center;
-    padding-bottom: 15%;
-    margin-top: 15%;
-}
-.welcome-section div.container .main-label span {
-    font-size: 34pt;
 }

@@ -1,10 +1,11 @@
 div.header .container {
     display:inline-flex;
     width: 100%;
-    padding: 48px 0px 12px 0px;
+    padding: 48px 0px 18px 0px;
     justify-content: center;
     align-items: center;
     gap: -0.219px;
+    height: 80px;
 }
 div.header .container div.navbar {
     display: flex;
@@ -35,9 +36,8 @@ span, a {
 a:hover {
     text-decoration: underline;
 }
-div.header .container div.navbar div.tabs span.tab {
-    width: 70px;
-    flex-shrink: 0;
+div.header .container div.navbar div.tabs a.tab {
+    font-size: 18px;
 }
 div.header .container div.navbar div.socials {
     display: flex;
@@ -59,9 +59,12 @@ div.header .container div.navbar div.socials a {
     border: 1px solid white;
     padding: 8px;
     background: black;
+    height: 30px;
+    align-self: center;
 }
 div.header .container div.navbar div.socials img {
-    width: 20px;
-    height: 20px;
-    filter: invert(1)
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-top: -2%;
 }
