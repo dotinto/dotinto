@@ -1,4 +1,5 @@
 import './header.css'
+import '../keyframes.css'
 
 import steam from "../assets/steam.png"
 import xbox from "../assets/xbox.png"

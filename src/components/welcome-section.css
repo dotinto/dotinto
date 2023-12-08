@@ -14,6 +14,26 @@ div.welcome-section {
     flex-direction: column;
     align-items: center;
 }
+img.downAnchor {
+    filter: invert(1);
+    aspect-ratio: 1/1;
+    width: 1.5%;
+    animation: downAnchor-move .3s normal both;
+    animation-delay: 3.5s;
+    animation-timing-function: cubic-bezier(0.470, 0.015, 0.980, 0.340);
+}
+.welcome-section div.container img.downAnchor {
+    position: relative;
+    top: 40%;
+}
+.welcome-section div.container .title {
+    color: white;
+    position: relative;
+    animation: header-fadein .3s normal both;
+    animation-delay: 2.5s;
+    top: 30%;
+    font-size: 48pt;
+}
 .welcome-section div.container div {
     display: block;
 }
@@ -21,7 +41,9 @@ div.welcome-section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    animation: skill-cards-throwing .3s normal both;
+    animation-delay: 2.5s;
 }
 .welcome-section div.container div.skill-cards div.skill-card {
     width: 131px;
@@ -57,4 +79,13 @@ div.welcome-section {
 .welcome-section div.container div.skill-cards div.skill-card img {
     width: 60%;
     aspect-ratio: 1/1;
+}
+.welcome-section div.container div.skill-cards div.skill-card {
+    animation: skill-card-1 .3s normal both;
+    animation-delay: 2s;
+}
+.welcome-section div.container div.skill-cards div.skill-card:nth-child(5) {
+    animation: skill-card-1 .3s normal both;
+    margin-right: 0 !important;
+    animation-delay: 2s;
 }

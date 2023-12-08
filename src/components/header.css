@@ -6,6 +6,8 @@ div.header .container {
     align-items: center;
     gap: -0.219px;
     height: 80px;
+    animation: header-fadein .3s normal both;
+    animation-delay: 2.5s;
 }
 div.header .container div.navbar {
     display: flex;
