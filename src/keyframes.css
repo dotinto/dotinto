@@ -59,7 +59,7 @@
 @keyframes downAnchor-move {
     0% {
         opacity: 0;
-        top: 25%;
+        top: 30%;
     }
     100% {
         opacity: 100%;

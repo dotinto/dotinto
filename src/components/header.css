@@ -35,7 +35,7 @@ span, a {
     line-height: 16px; /* 100% */
     text-decoration: none;
 }
-a:hover {
+a:hover,a.active {
     text-decoration: underline;
 }
 div.header .container div.navbar div.tabs a.tab {

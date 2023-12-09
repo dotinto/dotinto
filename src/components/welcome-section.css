@@ -17,10 +17,11 @@ div.welcome-section {
 img.downAnchor {
     filter: invert(1);
     aspect-ratio: 1/1;
-    width: 1.5%;
+    width: 1%;
     animation: downAnchor-move .3s normal both;
     animation-delay: 3.5s;
-    animation-timing-function: cubic-bezier(0.470, 0.015, 0.980, 0.340);
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
 }
 .welcome-section div.container img.downAnchor {
     position: relative;

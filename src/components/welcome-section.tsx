@@ -1,6 +1,8 @@
 import './welcome-section.css'
 import '../keyframes.css'
 
+import { useEffect } from 'react'
+
 import js from '../assets/js.png'
 import ts from '../assets/ts.png'
 import react from '../assets/react.png'
@@ -9,8 +11,14 @@ import css from '../assets/css.png'
 import downArrow from '../assets/expand-more.png'
 
 function WelcomeSection() {
+    useEffect(() => {
+        const anchorToSkills: HTMLDivElement | null = document.querySelector(".welcome-section .container .downAnchor");
+        (anchorToSkills !== null ) ? anchorToSkills.onclick = () => {
+            window.location.href = "#skills"
+        } : console.log(null);
+    })
     return (
-        <div className="welcome-section">
+        <div className="welcome-section" id="welcome">
             <div className="container">
                 <div className="title">
                     Welcome to my hub
