@@ -7,7 +7,7 @@ div.header .container {
     gap: -0.219px;
     height: 80px;
     animation: header-fadein .3s normal both;
-    animation-delay: 2.5s;
+    animation-delay: 2.2s;
 }
 div.header .container div.navbar {
     display: flex;

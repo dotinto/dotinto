@@ -8,6 +8,16 @@
         margin-top: 0;
     }
 }
+@keyframes skill-card-fade {
+    0% {
+        opacity: 0;
+        margin-right: -5%;
+    }
+    100% {
+        opacity: 100%;
+        margin-right: 5%;
+    }
+}
 @keyframes welcome-section-skill-card-second {
     0% {
         opacity: 0;

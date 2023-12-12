@@ -6,28 +6,29 @@ import { useEffect } from 'react'
 import js from '../assets/js.png'
 import ts from '../assets/ts.png'
 import react from '../assets/react.png'
-import html from '../assets/html.png'
-import css from '../assets/css.png'
-import downArrow from '../assets/expand-more.png'
 
 function WelcomeSection() {
     useEffect(() => {
-        const anchorToSkills: HTMLDivElement | null = document.querySelector(".welcome-section .container .downAnchor");
+        const anchorToSkills: HTMLDivElement | null = document.querySelector(".welcome-section .container .main-labels button");
         (anchorToSkills !== null ) ? anchorToSkills.onclick = () => {
-            window.location.href = "#skills"
+            (window.location.href.split("#")[1] === undefined) ? window.location.href = "#skills"
+            : (window.location.href.split("#")[1] === "skills") ? window.location.href = window.location.href.split("#")[0] += "#roadmap"
+            : window.location.href = window.location.href.split("#")[0]
         } : console.log(null);
     })
     return (
         <div className="welcome-section" id="welcome">
             <div className="container">
-                <div className="title">
-                    Welcome to my hub
-                </div>
-                <img src={downArrow} className="downAnchor" alt="anchor" />
-                <div className="skill-cards">
-                    <div className="skill-card">
-                        <img src={html} alt="html"/>
+                <div className="main-labels">
+                    <div className="title">
+                        Welcome to my hub
                     </div>
+                    <article>
+                        Hey, I'm an indie developer. I write dynamic websites in <span className="react-glowing">React</span> and layout templates from <span className="figma-glowing">Figma</span>. Here you can see my Hard skills and projects from my <a rel="noreferrer" target="_blank" href="https://github.com/dotinto" className="github-glowing">GitHub</a>.
+                    </article>
+                    <button>scroll below</button>
+                </div>
+                <div className="skill-cards">
                     <div className="skill-card">
                         <img src={js} alt="js"/>
                     </div>
@@ -36,9 +37,6 @@ function WelcomeSection() {
                     </div>
                     <div className="skill-card">
                         <img src={ts} alt="ts"/>
-                    </div>
-                    <div className="skill-card">
-                        <img src={css} alt="css"/>
                     </div>
                 </div>
             </div>
