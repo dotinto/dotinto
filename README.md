@@ -4,7 +4,8 @@
 <br>
 <img src="https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
 
-[![Discord Presence](https://lanyard.cnrad.dev/api/445565647653699594?idleMessage='Да, это дискорд')](https://discord.com/users/445565647653699594)
+[![Discord Presence](https://lanyard.cnrad.dev/api/445565647653699594)](https://discord.com/users/445565647653699594)
+да это дискорд
 
 <div align="center"><h1>📋 Languages</h1></div>
 <div style="display:flex;flex-direction:row;">
