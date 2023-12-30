@@ -58,7 +58,6 @@ function App() {
                 </div>
                 <div className="card-body" >
                     <img src="https://moondust-starlight.dx-assets.pages.dev/ukraine.png"  alt="" />
-                    <img src="https://moondust-starlight.dx-assets.pages.dev/russia.png" style={{marginLeft: "5%"}} alt="" />
                     <img src="https://moondust-starlight.dx-assets.pages.dev/united-states.png" style={{marginLeft: "5%"}} alt="" />
                     <img src="https://moondust-starlight.dx-assets.pages.dev/poland.png" style={{marginLeft: "5%"}} alt="" />
                 </div>
