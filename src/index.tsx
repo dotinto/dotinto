@@ -4,14 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-const Discord = require("./discord.html");
 
 export default function Dom() {
   return (
     <BrowserRouter>
       <Routes>
           <Route index element={<App />} />
-          <Route path="/.well-known/discord" element={<Discord />} />
       </Routes>
     </BrowserRouter>
   );
