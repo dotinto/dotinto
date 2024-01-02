@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Discord = () => "dh=0d793f45c157b3e076524ade93f6ee2940926caa"
+const Discord = () => {
+  return ("dh=0d793f45c157b3e076524ade93f6ee2940926caa")
+}
 
 export default function Dom() {
   return (
